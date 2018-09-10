@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Title </title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script sr="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+	<script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    skill_data: [ 
+                        {
+                            "id":"fifty", 
+                            "area":"C/C++/C#", 
+                            "level":"50%"
+                        },               
+                        {
+                            "id":"sixty", 
+                            "area":"JAVA", 
+                            "level":"60%"
+                        },                  
+                        {
+                            "id":"seventy", 
+                            "area":"PYTHON", 
+                            "level":"70%"
+                        },                
+                        {
+                            "id":"eighty", 
+                            "area":"JAVASCRIPT", 
+                            "level":"80%"
+                        },               
+                        {
+                            "id":"ninety", 
+                            "area":"CSS3", 
+                            "level":"90%"
+                        },          
+                        {
+                            "id":"one-hundred", 
+                            "area":"HTML5", 
+                            "level":"100%"
+                        } ]
+                }
+            }
+        });
+    </script>
+</head>
+<style>
+    html body {
+        background-color: #D3D3D3;
+        font-family: "Calibri", sans-serif;
+        color: #fff;
+    }
+    .container {
+        width: 24em;
+        height: 100%;
+        margin: auto;
+        justify-content: center;
+        background: #2E4A62;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+    .skill-box {
+        position: relative;
+        display: inline-block;
+        height: 2em;
+        width: 100%;
+        border: .1em solid #467196;
+        border-radius: 5px;
+        margin: .5em 0 .5em;
+        background-color: #d3d3d3;
+        box-shadow: 0 0 12px rgba(0,0,0,.25);
+    }
+    .skill-area {
+        position: absolute; 
+        float: left;
+        color: #fff;
+        font-size: 13px;
+        left: 10px;
+        top: 10px;
+    }
+    .skill-level {
+        position: relative;
+        float: right;
+        color: #fff;
+        font-size: 13px;
+        right: 10px;
+        top: 10px;
+    }
+    #fifty {
+        height: 2em;
+        width: 50%;
+        background: #467196;
+        display: block;
+    }
+    #sixty {
+        height: 2em;
+        width: 60%;
+        background: #467196;
+        display: block;
+    }
+    #seventy {
+        height: 2em;
+        width: 70%;
+        background: #467196;
+        display: block;
+    }
+    #eighty {
+        height: 2em;
+        width: 80%;
+        background: #467196;
+        display: block;
+    }
+    #ninety {
+        height: 2em;
+        width: 90%;
+        background: #467196;
+        display: block;
+    }
+    #one-hundred {
+        height: 2em;
+        width: 100%;
+        background: #467196;
+        display: block;
+    }
+    #fifty,
+    #sixty,
+    #seventy,
+    #eighty,
+    #ninety,
+    #one-hundred {
+        -moz-animation:expand 1.5s ease-out;
+        -webkit-animation:expand 1.5s ease-out;
+    }
+    @-moz-keyframes expand {0% { width: 30px;} 100% { transform: 100%;} }
+    @-webkit-keyframes expand {0% { width: 30px;} 100% { transform: 100%;} }
+    </style>
+<body>
+    <div id="app" class="container">
+        <h4 style="font-size:18px">Skills</h4>
+        <div class="skill-box" v-for="(skills, index) in skill_data" v-bind:key="index">
+            <div v-bind:id="skills.id">
+                <div class="skill-area" v-bind:title='skills.area'>{{ skills.area }}</div>
+                <div class="skill-level">{{ skills.level }}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
