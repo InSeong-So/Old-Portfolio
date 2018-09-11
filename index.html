@@ -30,20 +30,7 @@
                 $("html").animate({scrollTop:0}, 1000);
                 $('.skillbar').each(function(){
                     $(this).find('.skillbar-bar').animate({width:$(this).attr('data-percent')},3000);
-                });
-//
-//                $("#button1").click(function(event){
-//                    console.log(1);
-//                });
-//                
-//                $("#button2").click(function(event){
-//                    console.log(2);
-//                });
-//                
-//                $("#button3").click(function(event){
-//                    console.log(3);
-//                });
-                
+                });                
                 $("#box1").off().on("click", function(){
                     if(check == 0){
                         $("#check0").attr("src", "images/headImg4.jpg");
@@ -61,12 +48,14 @@
                         $("#check0").attr("src", "images/new2.jpg");
                         $("#check1").text("Vanity Fair");
                         $("#check2").text("고가의 명품을 소비자에게 일정 기간 대여해주는 서비스");
-                        $("#check3").text(" 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이게 우리가 만든 웹이라는 것이 자랑스럽던 첫 순간이었습니다.");
+                        $("#check3").text(" 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이걸 우리가 만들었다는게 자랑스러웠습니다.");
                         check = 0;
                     }
                 });
             });
         </script>
+        <style>
+        </style>
 	</head>
 	<body>
 		<!-- Header -->
@@ -157,18 +146,24 @@
 					<div class="grid-style">
 						<div>
 							<div class="box" id="box1">
-								<div class="image fit">
-                                    <img id="check0" src="images/new2.jpg" alt="Vanity Fair" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<h2 id="check1" style="font-weight: bold">Vanity Fair</h2>
-                                        <p id="check2">고가의 명품을 소비자에게 일정 기간 대여해주는 서비스</p>
-									</header>
-									<hr />
-                                    <p id="check3"> 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이게 우리가 만든 첫 웹이라는 것이 자랑스러웠습니다.</p>
-								</div>
-							</div>
+                                <figure class="snip1321">
+                                    <div class="image fit">
+                                        <img id="check0" src="images/new2.jpg" alt="Vanity Fair" />
+                                    </div>
+                                    <div class="content">
+                                        <header class="align-center">
+                                            <h2 id="check1" style="font-weight: bold">Vanity Fair</h2>
+                                            <p id="check2">고가의 명품을 소비자에게 일정 기간 대여해주는 서비스</p>
+                                        </header>
+                                        <hr />
+                                        <p id="check3"> 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이걸 우리가 만들었다는게 자랑스러웠습니다.</p>
+                                    </div>
+                                    <figcaption><i class="ion-stats-bars"></i>
+                                        <h4 style="color: #fff;">Project Impression</h4>
+                                        <h2 style="color: #fff;">Next</h2>
+                                    </figcaption>
+                                </figure>
+						    </div>
 						</div>
 
 						<div>
@@ -257,7 +252,7 @@
                                                     <div class="timeline-heading">
                                                         <h4 class="mb-10" style="font-weight: bold;">두원공과대학교 전문학사 졸업</h4>
                                                         <span class="duration mb-5">2016. 2 - 2018. 3</span>
-                                                        <span class="institution">컴퓨터공학과 학점 4.3 / 4.5, 학교장상 수상</span>
+                                                        <span class="institution">컴퓨터공학과<br>윈도우 운영체제 및 프로그래밍, 컴퓨터 구조와 네트워크, 정보통신동향<br>C# 프로그래밍, 데이터베이스(MySQL) 기초 및 응용, 스크립트 언어, 웹 디자인<br>포토샵, Excel 고급, 전자문서작성, 프레젠테이션 기법, 경영과 회계<br><br>학점 4.3점, 학교장상 수상</span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -272,7 +267,7 @@
                                                             1. Web Front-End UI구현 : HTML, CSS, JAVASCRIPT, JQuery, Ajax 활용 가능<br>
                                                             2. Web Application 구현 : JAVA, Python, JSP, Spring Framework, MySQL 활용 가능<br>
                                                             3. BigData 수집, 저장, 분석, 시각화 : Hadoop, R, Hive 활용 가능<br>
-                                                            4. 팀 / 개인 웹 프로젝트</span>
+                                                            4. 팀 / 개인 웹 프로젝트<br><br>성적우수자로 표창장 수여</span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -280,9 +275,9 @@
                                                 <div class="timeline-badge bg-red no-icon"></div>
                                                 <div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-red">
                                                     <div class="timeline-heading">
-                                                        <h4 class="mb-10" style="font-weight: bold;">세종사이버대학교 재학</h4>
+                                                        <h4 class="mb-10" style="font-weight: bold;">세종사이버대학교 재학 중</h4>
                                                         <span class="duration mb-5">2018.9 - </span>
-                                                        <span class="institution">컴퓨터 소프트웨어학과 학사 편입학</span>
+                                                        <span class="institution">컴퓨터 소프트웨어학과 학사 편입학<br>데이터베이스 설계 및 운영, 빅데이터 처리<br>인간관계 심리학, 이미지 메이킹</span>
                                                     </div>
                                                 </div>
                                             </li>
