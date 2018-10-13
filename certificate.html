@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	Transitive by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Portfolio by S.I.S.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <!-- icon -->
+		<link rel="shortcut icon" href="images/document.ico">
+		<link rel="icon" href="images/document.ico" type="images/document.ico">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+	</head>
+	<style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font: 1.2em/1.4 'Oswald', sans-serif;
+            color: #fff;
+            text-align: right;
+        }
+
+        .rolldown-list {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            margin-top: 140px;
+        }
+
+        .rolldown-list li {
+            padding: 1em;
+            margin-bottom: .125em;
+            display: block;
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        .rolldown-list li {
+            visibility: hidden;
+            -webkit-animation: rolldown .7s 1;
+            animation: rolldown .7s 1;
+            -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+
+        .rolldown-list li:nth-child(2n) {
+            background-color: #444;
+        }
+
+        .rolldown-list li:nth-child(2n+1) {
+            background-color: #333;
+        }
+
+        #myList {
+            position: absolute;
+            width: 50%;
+            left: 50%;
+            margin-left: -25%;
+        }
+        
+        #myList li:hover{
+            cursor: pointer;
+        }
+
+        #btnReload {
+            float: right;
+            color: #333;
+            background: #ccc;
+            text-transform: uppercase;
+            border: none;
+            padding: .5em 1em;
+        }
+
+        #btnReload:hover {
+            background: #ddd;
+        }
+
+        @-webkit-keyframes rolldown {
+            0% {
+                visibility: visible;
+                -webkit-transform: rotateX(180deg) perspective(500px);
+                transform: rotateX(180deg) perspective(500px);
+            }
+            70% {
+                visibility: visible;
+                -webkit-transform: rotateX(-20deg);
+                transform: rotateX(-20deg);
+            }
+            100% {
+                visibility: visible;
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+            }
+        }
+
+        @keyframes rolldown {
+            0% {
+                visibility: visible;
+                -webkit-transform: rotateX(180deg) perspective(500px);
+                transform: rotateX(180deg) perspective(500px);
+            }
+            70% {
+                visibility: visible;
+                -webkit-transform: rotateX(-20deg);
+                transform: rotateX(-20deg);
+            }
+            100% {
+                visibility: visible;
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+            }
+        }
+
+    </style>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Portfolio <span>by So-InSeong</span></a></div>
+				<a href="#menu" class="toggle"><span>Menu</span></a>
+			</header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <!--                    <li><a href="code.html">프로젝트 소스코드</a></li>-->
+                <li><a href="license.html">SIS 프로젝트</a></li>
+                <li><a href="certificate.html">증명서</a></li>
+            </ul>
+        </nav>
+           
+            <ul class="rolldown-list" id="myList">
+                <li id="clist1">군경력증명서</li>
+                <li id="clist2">성적증명서</li>
+                <li id="clist3">정보처리기사</li>
+                <li id="clist4">교육기관 수료증</li>
+                <li id="clist5">IT 보유기술서</li>
+<!--
+                <li>Six</li>
+                <li>Seven</li>
+                <li>Eight</li>
+-->
+            </ul> 
+
+        <button id="btnReload">Reload</button>
+        
+        <script>
+            // Increments the delay on each item.
+            $('.rolldown-list li').each(function () {
+                var delay = ($(this).index() / 4) + 's';
+                $(this).css({
+                    webkitAnimationDelay: delay,
+                    mozAnimationDelay: delay,
+                    animationDelay: delay
+                });
+            });
+
+            $('#btnReload').click(function () {
+                $('#myList').removeClass('rolldown-list');
+                setTimeout(function () {
+                    $('#myList').addClass('rolldown-list');
+                }, 1);
+            });
+            
+            $("#clist1").off().on("click",function(){
+                location.href="/pdf/군경력증명서.pdf";
+            });
+            
+            $("#clist2").off().on("click",function(){
+                location.href="/pdf/성적증명서.pdf";
+            });
+            
+            $("#clist3").off().on("click",function(){
+                location.href="/pdf/정보처리기사.jpg";
+            });
+            
+            $("#clist4").off().on("click",function(){
+                location.href="/pdf/교육기관 수료증.pdf";
+            });
+            
+            $("#clist5").off().on("click",function(){
+                location.href="/pdf/IT 보유기술서.pdf";
+            });
+        </script>
+	</body>
+</html>
