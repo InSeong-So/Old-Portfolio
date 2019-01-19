@@ -6,301 +6,315 @@
 -->
 <html>
 	<head>
-		<title>Portfolio by S.I.S.</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- icon -->
-		<link rel="shortcut icon" href="images/document.ico">
-		<link rel="icon" href="images/document.ico" type="images/document.ico">
-        <!-- css -->
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.easeScroll.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script type="text/javascript">
-            $("html").easeScroll();
-            $(document).ready(function(){
-                var check = 0;
-                $("html").animate({scrollTop:0}, 1000);
-                $('.skillbar').each(function(){
-                    $(this).find('.skillbar-bar').animate({width:$(this).attr('data-percent')},3000);
-                });                
-                $("#box1").off().on("click", function(){
-                    if(check == 0){
-                        $("#check0").attr("src", "images/headImg4.jpg");
-                        $("#check1").text("Deus Ex Machina");
-                        $("#check2").text("범죄에 관한 데이터를 분석하는 사이트");
-                        $("#check3").text(" 오롯이 저의 힘과 지식으로만 만든 첫 작품입니다. 공공데이터, 공개데이터를 사용한 빅데이터의 시각화, UI 디자인, JAVA 프로그래밍 등 많은 시간이 소비되었습니다. 혼자 프로젝트를 진행하면서 여러 장애물을 만나고 극복하였습니다. 힘겹게 완성된 프로젝트는 많이 부족해 보여도 뿌듯함을 느끼게 했습니다.");
-                        check = 1;
-                    }else if(check == 1){
-                        $("#check0").attr("src", "images/new3.jpg");
-                        $("#check1").text("Presentation");
-                        $("#check2").text("개인 프로젝트 발표");
-                        $("#check3").text(" 빅데이터 기술에 대해 지식이 없는 학생들, 저보다 높은 기술력을 보유한 프로그래머들 등 다양한 사람들 앞에서 프로젝트에 대한 설명, 시연, 질의응답을 진행했습니다. 첫 발표로 많이 부족하고 어색했지만 저의 기술이 들어간 프로젝트라서 자신감도, 자부심도 높았습니다. 좋은 경험이었고, 더 나은 프로젝트를 만들고 싶어졌습니다.");
-                        check = 2;
-                    }else if(check == 2){
-                        $("#check0").attr("src", "images/new2.jpg");
-                        $("#check1").text("Vanity Fair");
-                        $("#check2").text("고가의 명품을 소비자에게 일정 기간 대여해주는 서비스");
-                        $("#check3").text(" 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이걸 우리가 만들었다는게 자랑스러웠습니다.");
-                        check = 0;
-                    }
-                });
+    <title>Portfolio by S.I.S.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/document.ico">
+    <link rel="icon" href="images/document.ico" type="images/document.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.easeScroll.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        $("html").easeScroll();
+        $(document).ready(function() {
+            var check = 0;
+            $("html").animate({
+                scrollTop: 0
+            }, 1000);
+            $('.skillbar').each(function() {
+                $(this).find('.skillbar-bar').animate({
+                    width: $(this).attr('data-percent')
+                }, 3000);
             });
-        </script>
-        <style>
-        </style>
-	</head>
-	<body>
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Portfolio <span>by So-InSeong</span></a></div>
-				<a href="#menu" class="toggle"><span>Menu</span></a>
-			</header>
+            $("#next1").off().on("click", function() {
+                if (check == 0) {
+                    $("#check0").attr("src", "images/headImg4.jpg");
+                    $("#check1").text("Deus Ex Machina");
+                    $("#check2").text("범죄에 관한 데이터를 분석하는 사이트");
+                    $("#check3").text(" 오롯이 저의 힘과 지식으로만 만든 첫 작품입니다. 공공데이터, 공개데이터를 사용한 빅데이터의 시각화, UI 디자인, JAVA 프로그래밍 등 많은 시간이 소비되었습니다. 혼자 프로젝트를 진행하면서 여러 장애물을 만나고 극복하였습니다. 힘겹게 완성된 프로젝트는 많이 부족해 보여도 뿌듯함을 느끼게 했습니다.");
+                    check = 1;
+                } else if (check == 1) {
+                    $("#check0").attr("src", "images/new3.jpg");
+                    $("#check1").text("Presentation");
+                    $("#check2").text("개인 프로젝트 발표");
+                    $("#check3").text(" 빅데이터 기술에 대해 지식이 없는 학생들, 저보다 높은 기술력을 보유한 프로그래머들 등 다양한 사람들 앞에서 프로젝트에 대한 설명, 시연, 질의응답을 진행했습니다. 첫 발표로 많이 부족하고 어색했지만 저의 기술이 들어간 프로젝트라서 자신감도, 자부심도 높았습니다. 좋은 경험이었고, 더 나은 프로젝트를 만들고 싶어졌습니다.");
+                    check = 2;
+                } else if (check == 2) {
+                    $("#check0").attr("src", "images/new2.jpg");
+                    $("#check1").text("Vanity Fair");
+                    $("#check2").text("고가의 명품을 소비자에게 일정 기간 대여해주는 서비스");
+                    $("#check3").text(" 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이걸 우리가 만들었다는게 자랑스러웠습니다.");
+                    check = 0;
+                }
+            });
+        });
+    </script>
+    <style>
+    </style>
+</head>
 
-        <!-- Nav -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <!--                    <li><a href="code.html">프로젝트 소스코드</a></li>-->
-                <li><a href="license.html">SIS 프로젝트</a></li>
-                <li><a href="certificate.html">증명서</a></li>
-            </ul>
-        </nav>
+<body>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.html">Portfolio <span>by So-InSeong</span></a></div>
+        <a href="#menu" class="toggle"><span>Menu</span></a>
+    </header>
 
-		<!-- Banner -->
-        <section id="banner" style="background-image: url(images/2.gif)">
-				<div class="inner">
-					<h1>Portfolio</h1>
-					<p>신입 자바 개발자의 웹 포트폴리오<br />
-					built by <a href="https://templated.co/">Templated</a> and released under the <a href="https://templated.co/license">Creative Commons</a>.</p>
-					<a href="#one" class="button special scrolly">시작합니다!</a>
-				</div>
-			</section>
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <!--                    <li><a href="code.html">프로젝트 소스코드</a></li>-->
+            <li><a href="license.html">SIS 프로젝트</a></li>
+            <li><a href="certificate.html">증명서</a></li>
+        </ul>
+    </nav>
 
-		<!-- One -->
-			<section id="one" class="wrapper style2">
-				<div class="inner">
-					<div>
-						<div class="box">
-                            <div class="image fit" style="background-image: url(images/1.jpg; background-position: center; background-size: cover;">
-								<img src="images/1313.jpg" alt=""/>
-							</div>
-							<div class="content">
-								<header class="align-center">
-									<h2 style="font-weight: bold;">안녕하세요, 소인성입니다.</h2>
-									<p>보다 높은 곳을 향해, 다양한 경험을 쌓아갑니다.</p>
-								</header>
-								<hr />
-								<p style="margin:0 13%; text-align: center;"> 시대는 이제껏 없던 급격한 변화를 맞이합니다. 제 4차산업 혁명에 의해 인류는 상상할 수 없는 속도로 진화하고 있습니다.<br>이러한 기술과 발전의 거대한 폭풍 속, IT의 무한한 가능성과 희망을 발견했고 미래를 위해 과감히 뛰어들었습니다.<br>겸손함을 잃지 않고 차세대의 주인공이자 선두주자로 활약기 위해 전심전력 배움의 길을 걸어가고 있습니다.<br>저는 신기술을 흡수하고 활용하여 기업에 이바지하도록 최선을 다할 것이며───<br><br><strong>이 꺾이지 않는 의지는 반드시 귀사에 도움이 될 것입니다.</strong></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Banner -->
+    <section id="banner" style="background-image: url(images/2.gif)">
+        <div class="inner">
+            <h1>Portfolio</h1>
+            <p>신입 자바 개발자의 웹 포트폴리오<br /> built by <a href="https://templated.co/">Templated</a> and released under the <a href="https://templated.co/license">Creative Commons</a>.</p>
+            <a href="#one" class="button special scrolly">시작합니다!</a>
+        </div>
+    </section>
 
-		<!-- Two -->
-			<section id="two" class="wrapper style3">
-				<div class="inner">
-					<div id="flexgrid">
-						<div>
-							<header>
-								<h3 style="color:white;">Team Project</h3>
-							</header>
-							<p>당신의 상상을 현실로 이루어드립니다.<br>고가명품 대여 사이트<br>Vanity Fair</p>
-							<ul class="actions">
-								<li><a href="pdf/Team.pdf" class="button alt" id="button1" target="_blank">Learn More</a></li>
-							</ul>
-						</div>
-						<div>
-							<header>
-								<h3 style="color:white;">Personal Project</h3>
-							</header>
-							<p>마이너리티 리포트의 실현.<br>범죄분석 사이트<br>Deus Ex Machina</p>
-							<ul class="actions">
-                                <li><a href="pdf/personal.pdf" class="button alt" id="button2" target="_blank">Learn More</a></li>
-							</ul>
-						</div>
-						<div>
-							<header>
-								<h3 style="color:white;">Project Presentation</h3>
-							</header>
-							<p>개인 프로젝트를 기반으로<br>ppt-pdf 파일을 작성,<br>프로젝트 시연</p>
-							<ul class="actions">
-                                <li><a href="https://youtu.be/U94UijP9WUc" class="button alt" id="button3" target="_blank">Learn More</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- One -->
+    <section id="one" class="wrapper style2">
+        <div class="inner">
+            <div>
+                <div class="box">
+                    <div class="image fit" style="background-image: url(images/1.jpg; background-position: center; background-size: cover;">
+                        <img src="images/1313.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <h2 style="font-weight: bold;">안녕하세요, 소인성입니다.</h2>
+                            <p>보다 높은 곳을 향해, 다양한 경험을 쌓아갑니다.</p>
+                        </header>
+                        <hr />
+                        <p style="margin:0 13%; text-align: center;"> 시대는 이제껏 없던 급격한 변화를 맞이합니다. 제 4차산업 혁명에 의해 인류는 상상할 수 없는 속도로 진화하고 있습니다.<br>이러한 기술과 발전의 거대한 폭풍 속, IT의 무한한 가능성과 희망을 발견했고 미래를 위해 과감히 뛰어들었습니다.<br>겸손함을 잃지 않고 차세대의 주인공이자 선두주자로 활약기 위해 전심전력 배움의 길을 걸어가고 있습니다.<br>저는 신기술을 흡수하고 활용하여 기업에 이바지하도록 최선을 다할 것이며───<br><br><strong>이 꺾이지 않는 의지는 반드시 귀사에 도움이 될 것입니다.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Three -->
-			<section id="three" class="wrapper style2">
-				<div class="inner">
-					<div class="grid-style">
-						<div>
-							<div class="box" id="box1">
-                                <figure class="snip1321">
-                                    <div class="image fit">
-                                        <img id="check0" src="images/new2.jpg" alt="Vanity Fair" />
-                                    </div>
-                                    <div class="content">
-                                        <header class="align-center">
-                                            <h2 id="check1" style="font-weight: bold">Vanity Fair</h2>
-                                            <p id="check2">고가의 명품을 소비자에게 일정 기간 대여해주는 서비스</p>
-                                        </header>
-                                        <hr />
-                                        <p id="check3"> 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이걸 우리가 만들었다는게 자랑스러웠습니다.</p>
-                                    </div>
-                                    <figcaption><i class="ion-stats-bars"></i>
-                                        <h4 style="color: #fff;">Project Impression</h4>
-                                        <h2 style="color: #fff;">Next</h2>
-                                    </figcaption>
-                                </figure>
-						    </div>
-						</div>
+    <!-- Two -->
+    <section id="two" class="wrapper style3">
+        <div class="inner">
+            <div id="flexgrid">
+                <div>
+                    <header>
+                        <h3 style="color:white;">Team Project</h3>
+                    </header>
+                    <p>당신의 상상을 현실로 이루어드립니다.<br>고가명품 대여 사이트<br>Vanity Fair</p>
+                    <ul class="actions">
+                        <li><a href="pdf/Team.pdf" class="button alt" id="button1" target="_blank">Learn More</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <header>
+                        <h3 style="color:white;">Personal Project</h3>
+                    </header>
+                    <p>마이너리티 리포트의 실현.<br>범죄분석 사이트<br>Deus Ex Machina</p>
+                    <ul class="actions">
+                        <li><a href="pdf/personal.pdf" class="button alt" id="button2" target="_blank">Learn More</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <header>
+                        <h3 style="color:white;">Project Presentation</h3>
+                    </header>
+                    <p>개인 프로젝트를 기반으로<br>ppt-pdf 파일을 작성,<br>프로젝트 시연</p>
+                    <ul class="actions">
+                        <li><a href="https://youtu.be/U94UijP9WUc" class="button alt" id="button3" target="_blank">Learn More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<div>
-							<div class="box">
-                                <div class="content" style="text-align: center;">
-                                    <h2>저의 신입 기준 기술력은 이렇습니다.</h2>
-                                    <div class="container-skillbar">
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background: #970cc1;"><span>JAVA</span></div>
-                                            <div class="skillbar-bar" style="background:#970cc1;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
-                                            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background: #192823;"><span>SQL</span></div>
-                                            <div class="skillbar-bar" style="background: #454545;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
-                                            <div class="skillbar-bar" style="background: #EBB035;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background:  #55a69f;"><span>Javascript</span></div>
-                                            <div class="skillbar-bar" style="background:  #55a69f;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
-                                            <div class="skillbar-bar" style="background: #06A2CB;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                        <div class="skillbar clearfix " data-percent="50%">
-                                            <div class="skillbar-title" style="background: #218559;"><span>Linux</span></div>
-                                            <div class="skillbar-bar" style="background: #218559;"></div>
-                                            <div class="skill-bar-percent">50%</div>
-                                        </div>
-                                        <!-- Ende Skill Bar -->
-                                    </div>
+    <!-- Three -->
+    <section id="three" class="wrapper style2">
+        <div class="inner">
+            <div class="grid-style">
+                <div>
+                    <div class="box">
+                        <div class="image fit">
+                            <img id="check0" src="images/new2.jpg" alt="Vanity Fair" />
+                        </div>
+                        <div class="content">
+                            <header class="align-center">
+                                <h2 id="check1" style="font-weight: bold">Vanity Fair</h2>
+                                <p id="check2">고가의 명품을 소비자에게 일정 기간 대여해주는 서비스</p>
+                            </header>
+                            <hr />
+                            <p id="check3"> 처음 시도하는 팀 단위 프로젝트로써 어떤 주제로 나아갈 것인지 방향성을 정하고, 개인별 역할을 어떻게 분담할지 많은 의견을 나누었습니다. 고급 기술을 응용하는데 기술력의 한계가 있었기 때문에 서로간의 상호작용으로 도움을 주고, 받으며 프로젝트를 마쳤습니다. 프로젝트를 시연하는 날, 이걸 우리가 만들었다는게 자랑스러웠습니다.</p>
+                        </div>
+                    </div>
+                    <p id="next1" style="color: black; text-align: right; font-weight: bold">NEXT</p>
+                </div>
+
+                <div>
+                    <div class="box">
+                        <div class="content" style="text-align: center;">
+                            <h2>IT Technology Stack</h2>
+                            <div class="container-skillbar">
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background: #970cc1;"><span>JAVA</span></div>
+                                    <div class="skillbar-bar" style="background:#970cc1;"></div>
+                                    <div class="skill-bar-percent">50%</div>
                                 </div>
-							</div>
-						</div>
+                                <!-- Ende Skill Bar -->
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
+                                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- Ende Skill Bar -->
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background: #192823;"><span>SQL</span></div>
+                                    <div class="skillbar-bar" style="background: #454545;"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- Ende Skill Bar -->
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
+                                    <div class="skillbar-bar" style="background: #EBB035;"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- Ende Skill Bar -->
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background:  #55a69f;"><span>Javascript</span></div>
+                                    <div class="skillbar-bar" style="background:  #55a69f;"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- Ende Skill Bar -->
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
+                                    <div class="skillbar-bar" style="background: #06A2CB;"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- Ende Skill Bar -->
+                                <div class="skillbar clearfix " data-percent="50%">
+                                    <div class="skillbar-title" style="background: #218559;"><span>Linux</span></div>
+                                    <div class="skillbar-bar" style="background: #218559;"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- Ende Skill Bar -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					</div>
-				</div>
-			</section>
+            </div>
+        </div>
+    </section>
 
-		<!-- Four -->
-			<section id="four" class="wrapper style3">
-                <!--Main Wrapper-->
-                <div class="main-wrapper">
-                    <div class="mdl-js-layout mdl-layout--fixed-header">
-                        <!--Main Content-->
-                        <div class="main-content relative">
-                            <div class="container">						
-                                <!--Education Sec-->
-                                <section id="education_sec" class="education-sec sec-pad-top-sm">
-                                    <h2 class="mb-30" style="color:white;">Education</h2>
-                                    <div class="timeline-wrap overflow-hide mb-30">
-                                        <ul class="timeline">
-                                            <li>
-                                                <div class="timeline-badge bg-blue no-icon"></div>
-                                                <div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-                                                    <div class="timeline-heading">
-                                                        <h4 class="mb-10" style="font-weight: bold;">육군 부사관 전역</h4>
-                                                        <span class="duration mb-5">2012. 10 - 2018. 3</span>
-                                                        <span class="institution">병 보직 : 조종수<br>간부 1차 보직 : 포반장 (하사 2년차, 1차로 중사 진급 -> 참모부 보직변경)<br>간부 2차 보직 : 보안업무담당관<br>간부 3차 보직 : 교육지원담당관<br><br>체력, 병력관리, 전투기술 다방면 우수성적 보유</span>
-                                                    </div>
-                                                </div>
-                                            </li>
+    <!-- Four -->
+    <section id="four" class="wrapper style3">
+        <!--Main Wrapper-->
+        <div class="main-wrapper">
+            <div class="mdl-js-layout mdl-layout--fixed-header">
+                <!--Main Content-->
+                <div class="main-content relative">
+                    <div class="container">
+                        <!--Education Sec-->
+                        <section id="education_sec" class="education-sec sec-pad-top-sm">
+                            <h2 class="mb-30" style="color:white;">Education</h2>
+                            <div class="timeline-wrap overflow-hide mb-30">
+                                <ul class="timeline">
+                                    <li>
+                                        <div class="timeline-badge bg-blue no-icon"></div>
+                                        <div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+                                            <div class="timeline-heading">
+                                                <h4 class="mb-10" style="font-weight: bold;">육군 부사관 전역</h4>
+                                                <span class="duration mb-5">2012. 10 - 2018. 3</span>
+                                                <span class="institution">병 보직 : 조종수<br>간부 1차 보직 : 포반장 (하사 2년차, 1차로 중사 진급 -> 참모부 보직변경)<br>간부 2차 보직 : 보안업무담당관(겸직 : 측지부사관)<br>간부 3차 보직 : 교육지원담당관<br><br>체력, 병력관리, 전투기술 특급 / 부사관 학교장상, 사단장상, 연대장상, 군단장상 보유</span>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                                            <li class="timeline-inverted">
-                                                <div class="timeline-badge bg-green no-icon"></div>
-                                                <div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
-                                                    <div class="timeline-heading">
-                                                        <h4 class="mb-10" style="font-weight: bold;">두원공과대학교 전문학사 졸업</h4>
-                                                        <span class="duration mb-5">2016. 2 - 2018. 3</span>
-                                                        <span class="institution">컴퓨터공학과<br>윈도우 운영체제 및 프로그래밍, 컴퓨터 구조와 네트워크, 정보통신동향<br>C# 프로그래밍, 데이터베이스(MySQL) 기초 및 응용, 스크립트 언어, 웹 디자인<br>포토샵, Excel 고급, 전자문서작성, 프레젠테이션 기법, 경영과 회계<br><br>학점 4.3점, 학교장상 수상</span>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge bg-green no-icon"></div>
+                                        <div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+                                            <div class="timeline-heading">
+                                                <h4 class="mb-10" style="font-weight: bold;">두원공과대학교 전문학사 졸업</h4>
+                                                <span class="duration mb-5">2016. 2 - 2018. 3</span>
+                                                <span class="institution">컴퓨터공학과<br>윈도우 운영체제 및 프로그래밍, 컴퓨터 구조와 네트워크, 정보통신동향<br>C# 프로그래밍, 데이터베이스(MySQL) 기초 및 응용, 스크립트 언어, 웹 디자인<br>포토샵, Excel 고급, 전자문서작성, 프레젠테이션 기법, 경영과 회계<br><br>학점 4.3 / 4.5점, 학교장상 수상</span>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                                            <li>
-                                                <div class="timeline-badge bg-yellow no-icon"></div>
-                                                <div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
-                                                    <div class="timeline-heading">
-                                                        <h4 class="mb-10" style="font-weight: bold;">구디 아카데미 교육 수료</h4>
-                                                        <span class="duration mb-5">2018. 3 - 2018. 9</span>
-                                                        <span class="institution">	빅데이터 개발자를 위한 JAVA 양성반 교육<br><br>
+                                    <li>
+                                        <div class="timeline-badge bg-yellow no-icon"></div>
+                                        <div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
+                                            <div class="timeline-heading">
+                                                <h4 class="mb-10" style="font-weight: bold;">구디 아카데미 교육 수료</h4>
+                                                <span class="duration mb-5">2018. 3 - 2018. 9</span>
+                                                <span class="institution">	빅데이터 개발자를 위한 JAVA 양성반 교육<br><br>
                                                             1. Web Front-End UI구현 : HTML, CSS, JAVASCRIPT, JQuery, Ajax 활용 가능<br>
                                                             2. Web Application 구현 : JAVA, Python, JSP, Spring Framework, MySQL 활용 가능<br>
                                                             3. BigData 수집, 저장, 분석, 시각화 : Hadoop, R, Hive 활용 가능<br>
                                                             4. 팀 / 개인 웹 프로젝트<br><br>성적우수자로 표창장 수여</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="timeline-inverted">
-                                                <div class="timeline-badge bg-red no-icon"></div>
-                                                <div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-red">
-                                                    <div class="timeline-heading">
-                                                        <h4 class="mb-10" style="font-weight: bold;">세종사이버대학교 재학 중</h4>
-                                                        <span class="duration mb-5">2018.9 - </span>
-                                                        <span class="institution">컴퓨터 소프트웨어학과 학사 편입학<br>데이터베이스 설계 및 운영, 빅데이터 처리<br>인간관계 심리학, 이미지 메이킹</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix no-float"></li>
-                                        </ul>
-                                    </div>
-                                </section>
-                                <!--/Education Sec-->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge bg-red no-icon"></div>
+                                        <div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-red">
+                                            <div class="timeline-heading">
+                                                <h4 class="mb-10" style="font-weight: bold;">세종사이버대학교 재학 중 - 1학기</h4>
+                                                <span class="duration mb-5">2018.9 - </span>
+                                                <span class="institution">컴퓨터 소프트웨어학과 학사 편입학<br>데이터베이스 설계 및 운영, 빅데이터 처리<br>인간관계 심리학, 이미지 메이킹<br><br>학점 4.0 / 4.5점</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-badge bg-blue no-icon"></div>
+                                        <div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+                                            <div class="timeline-heading">
+                                                <h4 class="mb-10" style="font-weight: bold;">오픈베이스 인턴</h4>
+                                                <span class="duration mb-5">2018. 10 - 2018. 12</span>
+                                                <span class="institution">	(주)Openbase 기업부설 연구소 인턴<br><br>
+                                                            1. ADCsmart : 자체 OS 패치 파일 개발, SMS 연동 기능 개발(JPA), Docker 배포파일 개발<br>2. Targos QA : 서비스 UI 테스트, 악성 파일 수집 / 점검 기능 테스트</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix no-float"></li>
+                                </ul>
                             </div>
-                        </div>	
-                        <!--/Main Content-->
-                    </div>	
-                </div>	
-                <!--/Main Wrapper-->
-			</section>
+                        </section>
+                        <!--/Education Sec-->
+                    </div>
+                </div>
+                <!--/Main Content-->
+            </div>
+        </div>
+        <!--/Main Wrapper-->
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper">
-				<div class="inner">
-					<div class="copyright">
-						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>. Video <a href="http://coverr.co/">Coverr</a>.
-					</div>
-				</div>
-			</footer>
-	</body>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="copyright">
+            <p>CONTACT with us</p>
+        </div>
+        <div class="social">
+            <a href="mailto:goflvhxj2547@gmail.com&subject=소인성씨, 문의가 있어요." class="google">Google</a>
+            <a href="mailto:goflvhxj2547@naver.com&subject=소인성씨, 문의가 있어요." class="naver">Naver</a>
+            <a href="https://github.com/inseong-so" class="github">Github</a>
+            <a href="https://sisparang.tistory.com/" class="tistory">Tistory</a>
+        </div>
+    </footer>
+</body>
 </html>
